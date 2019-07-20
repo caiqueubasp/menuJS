@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    /* height: 10%; */
+    background-color: gray;
+    display: flex;
+    justify-content: space-between; 
+    align-content: center;
+    align-items: center;
+}
+
+div{
+    padding: 2%;
+    color: white;
+    font-size: 20pt;
+}
+
+nav{
+    width: 40%;
+    color: white;
+    font-size: 10pt;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.hamburguer:hover{
+    color: yellow;
+}
+
+li:hover{
+    color: yellow;
+}
+
+.hamburguer{
+    display: none;
+    
+}
+
+
+
+.loremContent{
+    width: 80vw;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+}
+
+.brand{
+    cursor: pointer;
+}
+
+.brand:hover{
+    background-color: black;
+}
+
+.divBrand{
+    cursor: pointer;
+    width: 90%;
+    height: 80%;
+    font-size: 40pt;
+    border: 1px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* transition: 2s; */
+    
+}
+
+.divLorem1{
+    width: 80%;
+    height: 70%;
+    border: 1px solid black;
+    background-color: slategray;
+}
+
+.divLorem2{
+    width: 80%;
+    height: 70%;
+    border: 1px solid black;
+    background-color: yellowgreen;
+}
+
+.divLorem3{
+    width: 80%;
+    height: 70%;
+    border: 1px solid black;
+    background-color: lightcoral;
+}
+
+
+/* Aqui começa o menu responsivo */
+
+@media (max-width: 600px) {
+
+.hamburguer{
+    display: block;
+    cursor: pointer;
+
+}
+
+li{
+    display: none;
+}
+
+
+ul{
+    flex-direction: column;
+    height: 40vh;
+    background: lightcoral;
+    position: relative;
+    z-index: 2;
+    transition: 3s;
+}
+
+.loremContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.divLorem1{
+    width: 70%;
+    height: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.divLorem2{
+    width: 70%;
+    height: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.divLorem3{
+    width: 70%;
+    height: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+}
